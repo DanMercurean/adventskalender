@@ -31,6 +31,4 @@ function changeGreeting(time) {
         setTimeout(function(){
             greet();
         },8000);
-}
-
-
+} 
