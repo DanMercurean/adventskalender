@@ -1,0 +1,190 @@
+body {
+    font-size: 100%;
+    color: #fff;
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+    font: inherit;
+    vertical-align: baseline;
+    background: url(img/background.jpg);
+    background-position: 15% 0, 34px 0, 113px 0;
+    background-position-y: 700px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    color: #ef0e0e;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+
+.animate{
+    animation: 1s fadeIn ease-in-out;
+}
+
+p {
+    font-size: 40px;
+}
+
+table {
+    margin-bottom: 30px;
+}
+
+.bg1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+.bg2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+.bg3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+.bg4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+}
+
+.tile-today {
+    background-color: #000;
+    color: #ffffff;
+    border: 1px solid #220001;
+}
+
+.tile-today .front {
+    transition: all 1.5s ease-in-out;
+    transform: perspective(500) rotateY(0deg);
+    transform-origin: 0% 0%;
+    backface-visibility: visible;
+    transition: all 1.5s ease-in-out;
+    transform: perspective(500) rotateY(0deg);
+    transform-origin: 0% 0%;
+    backface-visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    padding: 0 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Flip the tile when hovered */
+
+.tile-today:hover .front {
+    transform: perspective(500px) rotateY(-95deg);
+    transform: 0% 0%;
+}
+
+.tile-today, .front, .back {
+    width: 120px;
+    height: 120px;
+}
+
+.flipper {
+    position: relative;
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Front Tile - placed above back */
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.4) 100%), url(img/background.jpg);
+    background-color: #d5392c;
+    background-position: 0px 0px, -424.5px -240px;
+}
+
+/* Back - initially hidden Tile */
+
+.back {
+    background-color: #000;
+}
+
+.back img {
+    width: 120px;
+    height: 120px;
+}
+
+#snowflakeContainer {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+.snowflake {
+    position: fixed;
+    background-color: #CCC;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgb(212, 244, 245);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        font-size: 0;
+    }
+
+    to {
+        opacity: 1;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .bg1 {
+        flex-wrap: wrap;
+    }
+    .bg2 {
+        flex-wrap: wrap;
+    }
+    .bg3 {
+        flex-wrap: wrap;
+    }
+    .bg4 {
+        flex-wrap: wrap;
+    }
+    .tile-today .front {
+        width: 200px;
+        height: 200px;
+    }
+    .tile-today, .front, .back {
+        width: 200px;
+        height: 200px;
+    }
+    .back img {
+        width: 200px;
+        height: 200px;
+    }
+}

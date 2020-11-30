@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <title>Advent Calendar 2020</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='adventcalendar.css'>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src='main.js'></script>
+
+
+</head>
+
+<body onload="greet()">
+
+    <!--little doors-->
+    <h1 id="greeting" class="animate">Frohe Feiertage</h1>
+
+    <div class="bg1">
+        <table id="day1" onclick="play(1)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile1">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>1</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/favicon.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day2" onclick="play(2)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile2">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>2</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day3" onclick="play(3)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile3">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>3</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day4" onclick="play(4)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile4">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>4</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day5" onclick="play(5)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile5">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>5</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day6" onclick="play(6)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile6">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>6</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/6.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="bg2">
+        <table id="day7" onclick="play(7)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile7">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>7</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/7.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day8" onclick="play(8)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile8">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>8</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/8.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day9" onclick="play(9)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile9">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>9</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/9.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day10" onclick="play(10)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile10">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>10</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/10.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day11" onclick="play(11)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile11">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>11</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/11.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day12" onclick="play(12)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile12">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>12</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/12.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="bg3">
+        <table id="day13" onclick="play(13)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile13">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>13</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/13.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day14" onclick="play(14)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile14">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>14</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/14.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day15" onclick="play(15)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile15">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>15</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/15.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day16" onclick="play(16)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile16">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>16</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/16.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day17" onclick="play(17)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile17">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>17</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/17.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day18" onclick="play(18)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile18">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>18</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/18.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="bg4">
+        <table id="day19" onclick="play(19)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile19">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>19</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/19.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day20" onclick="play(20)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile20">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>20</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/20.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day21" onclick="play(21)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile21">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>21</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/21.jpg
+                                        ">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day22" onclick="play(22)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile22">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>22</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/22.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day23" onclick="play(23)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile23">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>23</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/23.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table id="day24" onclick="play(24)">
+            <tr>
+                <td>
+                    <div class="tile tile-today" id="tile24">
+                        <div class="flipper">
+                            <div class="front">
+                                <!-- front content -->
+                                <p>24</p>
+                            </div>
+
+                            <div class="back">
+                                <!-- back content -->
+                                <a href="https://www.youtube.com/watch?v=aAkMkVFwAoo">
+                                    <img src="img/24.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--little doors-->
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark footer-custom">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#" target="_blanks">github.com/DanMercurean/adventCalendar</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
