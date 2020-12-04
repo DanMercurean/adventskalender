@@ -15,17 +15,17 @@ function play(doorName) {
 
 function greet() {
     document.getElementById('greeting').innerHTML = 'Frohe Weihnachten';
-    changeGreeting('Frohe Feiertage', 6000);
+    changeGreeting('Frohe Feiertage', 4000);
     changeGreeting('Happy Holidays ', 8000);
-    changeGreeting('Joyeuses fêtes ', 10000);
+    changeGreeting('Joyeuses fêtes ', 12000);
 
     
     setInterval(function () {
-        changeGreeting('Frohe Feiertage', 6000);
+        changeGreeting('Frohe Feiertage', 4000);
         changeGreeting('Happy Holidays ', 8000);
-        changeGreeting('Joyeuses fêtes ', 10000);
+        changeGreeting('Joyeuses fêtes ', 12000);
 
-    }, 12000);
+    }, 16000);
 }
 
 function changeGreeting(text, time) {
