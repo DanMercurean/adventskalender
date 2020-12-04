@@ -1,7 +1,9 @@
 let currentDay = new Date().getDate();
 let id = 'tile' + currentDay;
 
-
+function addAnimation() {
+    document.getElementById(id).classList.add('tile-animation');
+}
 
 function play(doorName) {
     if (currentDay <= doorName) {
@@ -13,22 +15,27 @@ function play(doorName) {
 
 function greet() {
     document.getElementById('greeting').innerHTML = 'Frohe Weihnachten';
-
     changeGreeting('Frohe Feiertage', 6000);
-    changeGreeting('Happy Holidays ', 12000);
-    changeGreeting('Joyeuses fêtes ', 18000);
+    changeGreeting('Happy Holidays ', 8000);
+    changeGreeting('Joyeuses fêtes ', 10000);
+
+    
+    setInterval(function () {
+        changeGreeting('Frohe Feiertage', 6000);
+        changeGreeting('Happy Holidays ', 8000);
+        changeGreeting('Joyeuses fêtes ', 10000);
+
+    }, 12000);
 }
 
-function changeGreeting(time) {
+function changeGreeting(text, time) {
     setTimeout(function () {
         document.getElementById('greeting').classList.add('animate');
+        document.getElementById('greeting').innerHTML = text;
 
         setTimeout(function () {
             document.getElementById('greeting').classList.remove('animate');
         }, 1000);
     }, time);
 
-        setTimeout(function(){
-            greet();
-        },8000);
 } 

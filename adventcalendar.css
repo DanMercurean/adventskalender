@@ -88,7 +88,7 @@ table {
 
 /* Flip the tile when hovered */
 
-.tile-today:hover .front {
+.tile-animation:hover .front {
     transform: perspective(500px) rotateY(-95deg);
     transform: 0% 0%;
 }
