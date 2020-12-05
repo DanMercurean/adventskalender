@@ -14,18 +14,20 @@ function play(doorName) {
 }
 
 function greet() {
-    document.getElementById('greeting').innerHTML = 'Frohe Weihnachten';
-    changeGreeting('Frohe Feiertage', 4000);
-    changeGreeting('Happy Holidays ', 8000);
-    changeGreeting('Joyeuses fêtes ', 12000);
+    document.getElementById('greeting').innerHTML = 'Frohe Weihnachten!';
+    changeGreeting('Frohe Feiertage!', 4000);
+    changeGreeting('Happy Holidays!', 8000);
+    changeGreeting('Joyeuses fêtes!', 12000);
+    changeGreeting('Sărbători fericite!', 16000);
 
     
     setInterval(function () {
-        changeGreeting('Frohe Feiertage', 4000);
-        changeGreeting('Happy Holidays ', 8000);
-        changeGreeting('Joyeuses fêtes ', 12000);
+        changeGreeting('Frohe Feiertage!', 4000);
+        changeGreeting('Happy Holidays!', 8000);
+        changeGreeting('Joyeuses fêtes!', 12000);
+        changeGreeting('Sărbători fericite!', 16000);
 
-    }, 16000);
+    }, 20000);
 }
 
 function changeGreeting(text, time) {
